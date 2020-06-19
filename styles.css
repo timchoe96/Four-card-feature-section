@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins',sans-serif;
+}
+
+body header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+body header .first {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+body header .second {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+body header .third {
+  font-size: 15px;
+  font-weight: 200;
+  width: 500px;
+  display: inline-block;
+  margin-top: 10px;
+  line-height: 2;
+}
+
+body .box {
+  margin-bottom: 30px;
+  padding: 30px;
+  font-size: 10px;
+  font-weight: 200;
+  border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 20px -5px #a3a5ae;
+          box-shadow: 5px 5px 20px -5px #a3a5ae;
+  width: 300px;
+  height: 220px;
+}
+
+body .box img {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  width: 40px;
+  height: auto;
+}
+
+body .box h3 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+body .box p {
+  line-height: 2;
+  padding-right: 20px;
+}
+
+body .red {
+  border-top: 3px solid #ea5353;
+}
+
+body .yellow {
+  border-top: 3px solid #fcaf4a;
+}
+
+body .green {
+  border-top: 3px solid #45d3d3;
+}
+
+body .blue {
+  border-top: 3px solid #549ef2;
+}
+
+body .firstBox {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -1;
+}
+
+body .secondBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  position: absolute;
+  bottom: 150px;
+  width: 95vw;
+  left: 35px;
+}
+
+@media (max-width: 375px) {
+  .box {
+    width: 85vw !important;
+  }
+  .box p {
+    font-size: 12px !important;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  .secondBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 125vh;
+    bottom: -455px !important;
+    left: 30px !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    width: 85vw !important;
+  }
+  .firstBox {
+    display: static;
+    position: absolute;
+    bottom: -200px;
+    left: 30px;
+  }
+  .third {
+    width: 300px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
